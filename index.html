@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image2PDF Studio</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <main class="app">
+    <div class="loader" id="loader" aria-live="polite">
+      <div class="spinner" role="status" aria-label="Convirtiendo"></div>
+      <div class="loader-text">Convirtiendo a PDF...</div>
+    </div>
+    <header>
+      <h1>Image2PDF Studio</h1>
+      <p class="subtitle">
+        Convierte múltiples imágenes a un PDF en segundos. 
+        Todo sucede en tu navegador.
+        <br>
+        Es seguro porque no sube nada a servidores: los archivos nunca salen de tu PC y la conversión pasa 100% en local.
+      </p>
+      <div class="trust-banner">
+        <div class="trust-icon">🛡️</div>
+        <div class="trust-title">Privacidad total y velocidad inmediata</div>
+        <div class="trust-sub">Cada imagen se procesa en tu dispositivo: no hay envíos a la nube ni guardado en servidores externos.</div>
+        <div class="pill-row">
+          <span class="pill">100% local</span>
+          <span class="pill">Sin subir a servidores</span>
+          <span class="pill">Tu PDF en segundos</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="dropzone" id="dropzone">
+      <div class="drop-icon">📄</div>
+      <div class="drop-title">Arrastra y suelta tus imágenes</div>
+      <p class="drop-helper">Formatos soportados: JPG, JPEG, PNG · Máxima privacidad, sin subir archivos</p>
+      <input class="file-input" id="fileInput" type="file" accept="image/png, image/jpeg" multiple>
+    </section>
+
+    <section class="toolbar" id="toolbar" style="display: none;">
+      <div class="toolbar-title">Tus imágenes</div>
+      <label class="sort-control" for="sortOrder">
+        Ordenar:
+        <select class="sort-select" id="sortOrder" aria-label="Ordenar imágenes">
+          <option value="asc">Nombre A → Z</option>
+          <option value="desc">Nombre Z → A</option>
+          <option value="manual">Orden manual (arrastrar)</option>
+        </select>
+      </label>
+    </section>
+
+    <section class="preview-grid" id="preview"></section>
+
+    <div class="actions" id="actions" style="display: none;">
+      <button class="convert-btn" id="convertBtn">Convertir a PDF</button>
+    </div>
+
+    <footer>
+      <span class="footer-text">Powered by</span>
+      <a class="brand-badge" href="https://24bytes.pro/" target="_blank" rel="noreferrer noopener">
+        <span class="heart">🤍</span>
+        <span class="brand-name">24BytesCo</span>
+      </a>
+    </footer>
+  </main>
+
+  <!-- jsPDF desde CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" integrity="sha512-qZvrmS2ekKPF2mSznTQsxqPgnpkI4DNTlrdUmTzrDgektczlKNRRhy5X5AAOnx5S09ydFYWWNSfcEqDTTHgtNA==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>
