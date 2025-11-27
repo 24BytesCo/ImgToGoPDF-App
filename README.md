@@ -1,4 +1,4 @@
-# 📄 ImgToGoPDF-App
+# 📄 Images-to-PDF
 
 **ImgToGoPDF** es una aplicación web ligera, segura y eficiente para convertir múltiples imágenes en un único documento PDF.
 
@@ -20,8 +20,8 @@
 ## 🚀 Cómo usar
 ### Clonar el repositorio
 ```bash
-git clone https://github.com/24BytesCo/ImgToGoPDF-App.git
-cd ImgToGoPDF-App
+git clone https://github.com/24BytesCo/Images-to-PDF.git
+cd Images-to-PDF
 # Abre index.html en tu navegador favorito
 ```
 
@@ -32,7 +32,7 @@ cd ImgToGoPDF-App
 
 ## 📂 Estructura del proyecto
 ```plaintext
-ImgToGoPDF-App/
+Images-to-PDF/
 ├── index.html
 ├── assets/
 │   ├── css/
