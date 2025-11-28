@@ -1,15 +1,20 @@
-# 📄 Images-to-PDF
 
-**ImgToGoPDF** es una aplicación web ligera, segura y eficiente para convertir múltiples imágenes en un único documento PDF.
+# Images-to-PDF Studio
 
-> 🔒 **Privacidad garantizada:** Todo el procesamiento ocurre en tu navegador. Las imágenes **nunca** se suben a servidores externos.
 
-## ✨ Características
-- Previsualización instantánea de las imágenes seleccionadas.
-- Conversión rápida a PDF con `jsPDF` (formato A4).
-- Arrastra y suelta, orden alfabético o manual por drag & drop.
-- Arquitectura 100% cliente: sin backend ni subida de archivos.
-- Interfaz moderna, con modo oscuro y foco en la seguridad.
+Convierte, une y agrupa imágenes JPG y PNG en un solo PDF, directo en tu navegador. 100% local, gratis, sin publicidad y sin subir archivos. Nació para resolver mi propia necesidad y está abierto para cualquiera que lo necesite: https://24bytesco.github.io/images-to-PDF/
+
+## Propósito
+- Pasar imágenes a PDF sin instalar nada ni subirlas a servidores.
+- Ofrecer una herramienta ilimitada, sin anuncios y lista para usar en cualquier navegador moderno.
+
+## Características
+- Arrastra y suelta, con orden alfabético o manual (drag & drop).
+- Convierte, une y agrupa JPG/PNG en un único PDF (A4) en segundos.
+- Procesamiento 100% cliente: tus archivos no salen de tu dispositivo.
+- Marca de agua de marca fija en el PDF.
+- Contadores públicos: visitas, PDFs creados y clicks al badge (sin cookies ni datos personales).
+- Formulario de feedback/contacto (nombre, correo/número, mensaje) vía FormSubmit.
 
 ## 🛠️ Stack
 - HTML5
@@ -35,26 +40,20 @@ cd Images-to-PDF
 Images-to-PDF/
 ├── index.html
 ├── assets/
-│   ├── css/
-│   │   └── styles.css      # Estilos principales
-│   └── js/
-│       └── app.js          # Lógica de la app
-├── imgs/
-│   └── 24bytes-azul.png    # Marca de agua
-└── README.md
+│   ├── css/styles.css
+│   └── js/app.js
+└── imgs/ (marca de agua)
 ```
 
-## 🤝 Contribución
-Las contribuciones son bienvenidas. Para proponer mejoras:
-1. Haz un fork del proyecto.
-2. Crea una rama (`git checkout -b feature/mi-mejora`).
-3. Haz commit de tus cambios (`git commit -m 'Describe tu mejora'`).
-4. Sube la rama (`git push origin feature/mi-mejora`).
-5. Abre un Pull Request.
+## Stack
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- Librería: jsPDF (v2.5.1)
 
-## 📄 Licencia
-Distribuido bajo la licencia MIT. Consulta el archivo LICENSE para más información.
+## Contribuir
+- Fork + PR con tu mejora. Rama sugerida: `feature/tu-mejora`.
+- Ideas: más formatos, mejoras de accesibilidad/SEO, UX, tests, nuevas opciones de salida.
 
-<p align="center">
-Desarrollado con ❤️ por <a href="https://24bytes.pro/">24BytesCo</a>
-</p>
+## Licencia
+MIT. Disfruta y compártelo. Sin publicidad, sin límites. 
